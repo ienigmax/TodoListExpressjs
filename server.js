@@ -6,8 +6,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
-    console.info('Request: ', req);
-    console.info('Response: ', res);
     next();
 });
 
@@ -20,7 +18,7 @@ app.get('/api/v1/tasks/add_new_task/:title/:content', TaskController.addNewTask)
 app.get('/api/v1/tasks/delete_task/:uuid', TaskController.removeExistingTask);
 app.get('/api/v1/tasks/change_status/:uuid/:status', TaskController.changeTaskStatus);
 app.get('/api/v1/tasks/update_title/:uuid/:title', TaskController.changeTaskTitle);
-app.get('/api/v1/tasks/update_content/:uuid/:title', TaskController.changeTaskContent());
+app.get('/api/v1/tasks/update_content/:uuid/:title', TaskController.changeTaskContent);
 app.get('/api/v1/tasks/:param', RouteController.PageNotExists);
 
 app.listen(port, () => {
