@@ -1,0 +1,36 @@
+{
+  "name": "todolistexpress",
+  "version": "1.0.0",
+  "description": "Server side for todo list app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ienigmax/TodoListExpressjs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "express",
+    "node.js",
+    "todolist"
+  ],
+  "author": "iEnigmaX",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ienigmax/TodoListExpressjs/issues"
+  },
+  "homepage": "https://github.com/ienigmax/TodoListExpressjs#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
